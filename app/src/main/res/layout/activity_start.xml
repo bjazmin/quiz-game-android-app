@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="50dp"
+    android:background="#FFD899"
+    tools:context=".StartActivity"
+    android:id="@+id/start">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/trivia_quiz_game" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2b2b2b"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/textPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2b2b2b"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <android.widget.Button
+            android:id="@+id/buttonUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2b2d42"
+            android:onClick="loginClicked"
+            android:padding="8dp"
+            android:text="LOGIN"
+            android:textColor="#fef9ef" />
+
+        <android.widget.Button
+            android:id="@+id/buttonGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2b2d42"
+            android:onClick="registerClicked"
+            android:padding="8dp"
+            android:text="REGISTER"
+            android:textColor="#fef9ef" />
+</LinearLayout>
+

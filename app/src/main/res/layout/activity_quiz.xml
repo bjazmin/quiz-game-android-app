@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF9EF"
+    tools:context=".QuizActivity"
+    android:id="@+id/quiz">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textViewQuestionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:text="X/X"
+                android:textAllCaps="true"
+                android:textColor="#17C3B2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+
+            <TextView
+                android:id="@+id/textViewScore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="240dp"
+                android:text="Score: 0"
+                android:textAllCaps="true"
+                android:textColor="#17C3B2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/textViewTimer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="00:30"
+                android:textAllCaps="true"
+                android:textColor="#FFCB77"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:freezesText="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text=" Question details"
+                android:textColor="#221e22"
+                android:textSize="18sp"
+                android:freezesText="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#227C9D"
+                android:onClick="optionBtnClicked"
+                android:tag="1"
+                android:text="OPTION 1"
+                android:textColor="#FFE0AD"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#227C9D"
+                android:onClick="optionBtnClicked"
+                android:tag="2"
+                android:text="Option 2"
+                android:textColor="#FFE0AD"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#227C9D"
+                android:onClick="optionBtnClicked"
+                android:tag="3"
+                android:text="Option 3"
+                android:textColor="#FFE0AD"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#227C9D"
+                android:onClick="optionBtnClicked"
+                android:tag="4"
+                android:text="Option 4"
+                android:textColor="#FFE0AD"
+                android:textStyle="bold"
+                android:freezesText="true"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

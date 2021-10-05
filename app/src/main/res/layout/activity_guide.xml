@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEF9EF"
+    tools:context=".MainActivity"
+    android:id="@+id/guide">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewGuideTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide"
+            android:paddingBottom="20dp"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewGuideDetails"
+            android:layout_below="@id/textViewGuideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"/>
+
+        <android.widget.Button
+            android:layout_below="@id/textViewGuideDetails"
+            android:layout_centerInParent="true"
+            android:id="@+id/btnHome"
+            android:layout_width="118dp"
+            android:layout_height="38dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2b2d42"
+            android:padding="8dp"
+            android:text="HOME"
+            android:textColor="#fef9ef" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
